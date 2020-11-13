@@ -283,3 +283,44 @@
 2020/11/12 16:46:07.305 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[46m POST    [0m /hmacsha/GetMAC
 2020/11/12 16:47:27.865 [I] [asm_amd64.s:1373]  http server Running on http://:8080
 2020/11/12 16:47:27.865 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 09:54:19.635 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 09:54:19.635 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 09:54:55.861 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 09:54:55.861 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 09:55:04.978 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 09:55:04.978 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 10:01:55.532 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     16.001ms|   match|[44m GET     [0m /     r:/
+2020/11/13 10:01:55.705 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /static/js/reload.min.js
+2020/11/13 10:02:12.327 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 10:02:12.327 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 10:03:31.004 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 10:03:31.004 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 10:04:34.797 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 10:04:34.797 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 10:04:36.859 [D] [dynamics.go:60]  this is debug 
+2020/11/13 10:04:36.862 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     3.0002ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 10:04:36.909 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[44m GET     [0m /favicon.ico
+2020/11/13 11:13:53.338 [D] [dynamics.go:60]  this is debug 
+2020/11/13 11:13:53.338 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0001ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:13:53.954 [D] [dynamics.go:60]  this is debug 
+2020/11/13 11:13:53.954 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:13:54.368 [D] [dynamics.go:60]  this is debug 
+2020/11/13 11:13:54.369 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0001ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:13:56.344 [D] [dynamics.go:60]  this is debug 
+2020/11/13 11:13:56.345 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     2.0001ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:19:28.397 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/13 11:19:28.397 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/13 11:19:32.055 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:19:32.056 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     6.0003ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:25:59.715 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:25:59.724 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    24.0014ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:26:00.963 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:26:00.965 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     9.0005ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:26:30.170 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:26:30.177 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    11.0007ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:26:46.709 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:26:46.713 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     7.0004ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:26:58.192 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:26:58.200 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    11.0007ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:27:49.905 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:27:49.907 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0003ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test

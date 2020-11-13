@@ -13,13 +13,15 @@ func init() {
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	beego.SetLogger("file", `{"filename":"logs/test.log"}`)
 
-	//  beego.AppConfig.String("mysqluser")
-	// beego.AppConfig.String("mysqlpass")
-	// beego.AppConfig.String("mysqlurls")
-	// beego.AppConfig.String("mysqldb")
+	sqluser :=  beego.AppConfig.String("mysqluser")
+	sqlpwd := beego.AppConfig.String("mysqlpass")
+	//sqlurl := beego.AppConfig.String("mysqlurls")
+	sqldb := beego.AppConfig.String("mysqldb")
 
-	orm.RegisterDataBase("default", "mysql", "root:root@/orm_test?charset=utf8")
+	//orm.RegisterDataBase("default", "mysql", "root:root@/orm_test?charset=utf8")
+	orm.RegisterDataBase("default", "mysql", sqluser+":"+sqlpwd+"@/"+sqldb+"?charset=utf8")
 }
+
 func main() {
 	// tk1 := toolbox.NewTask("tk1", "* * * * * *", func() error { fmt.Println("tk1"); return nil })
 	// toolbox.AddTask("tk1", tk1)

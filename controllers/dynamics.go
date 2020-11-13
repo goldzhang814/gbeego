@@ -26,6 +26,11 @@ type res struct{
 	Data interface{} `json:"data"`
 }
 
+type User struct{
+	Id  int `json:"id"`
+	Name  string `json:"name"`
+}
+
 type UserInfo struct {
     ID uint64
     Username string
@@ -51,11 +56,21 @@ func (c *DynamicsController) Get() {
 	//user.Profile = profile
 	user.Name = "slene"
 	f,_ := o.Insert(user)
+	fmt.Println(f)
+
+
+	var users []*User
+	num,err := o.Raw("SELECT id,name FROM user").QueryRows(&users)
+	if err == nil  {
+		fmt.Println("user nums: ", num)
+	}
 
 	r := new(res)
 	r.Code = 1001
 	r.Msg = "success"
-	r.Data = f
+
+	//r.Data = f
+	r.Data = users
 
 	beego.Debug("this is debug")
 
