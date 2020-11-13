@@ -1,0 +1,285 @@
+2020/09/29 17:00:27.204 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/29 17:01:27.727 [D] [main.go:14]  this is debug 
+2020/09/29 17:01:27.827 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/29 17:02:03.932 [D] [server.go:2807]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m //dynamics/test   r:/dynamics/test
+2020/09/29 17:02:04.752 [D] [main.go:14]  this is debug 
+2020/09/29 17:02:04.851 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 09:49:07.613 [D] [main.go:14]  this is debug 
+2020/09/30 09:49:07.764 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:05:50.456 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:06:53.440 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:08:02.647 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:17:44.501 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/09/30 10:17:44.501 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:18:39.475 [D] [dynamics.go:57]  this is debug 
+2020/09/30 10:18:39.475 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     5.0003ms|   match|[44m GET     [0m //dynamics/test   r:/dynamics/test
+2020/09/30 10:26:54.940 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/09/30 10:26:54.940 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:31:20.684 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/09/30 10:31:20.684 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/09/30 10:31:43.801 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/09/30 10:31:43.801 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:28:59.729 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:28:59.729 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:29:23.906 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2020/10/09 16:29:24.000 [D] [server.go:2807]  |            ::1|[43m 404 [0m|     2.0001ms| nomatch|[44m GET     [0m /favicon.ico
+2020/10/09 16:30:01.860 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     4.0002ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:30:12.761 [C] [panic.go:969]  the request url is  /dynamics/list
+2020/10/09 16:30:12.764 [C] [panic.go:969]  Handler crashed with error interface conversion: interface {} is float64, not int64
+2020/10/09 16:30:12.769 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/10/09 16:30:12.776 [C] [panic.go:969]  c:/go/src/runtime/iface.go:260
+2020/10/09 16:30:12.782 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/commons.go:54
+2020/10/09 16:30:12.783 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/dynamics.go:95
+2020/10/09 16:30:12.784 [C] [panic.go:969]  c:/go/src/reflect/value.go:460
+2020/10/09 16:30:12.785 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/10/09 16:30:12.785 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/10/09 16:30:12.786 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/10/09 16:30:12.788 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/10/09 16:30:12.789 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/10/09 16:30:12.790 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/10/09 16:31:25.668 [C] [panic.go:969]  the request url is  /dynamics/list
+2020/10/09 16:31:25.669 [C] [panic.go:969]  Handler crashed with error interface conversion: interface {} is float64, not int64
+2020/10/09 16:31:25.670 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/10/09 16:31:25.670 [C] [panic.go:969]  c:/go/src/runtime/iface.go:260
+2020/10/09 16:31:25.671 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/commons.go:54
+2020/10/09 16:31:25.672 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/dynamics.go:95
+2020/10/09 16:31:25.672 [C] [panic.go:969]  c:/go/src/reflect/value.go:460
+2020/10/09 16:31:25.673 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/10/09 16:31:25.673 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/10/09 16:31:25.673 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/10/09 16:31:25.674 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/10/09 16:31:25.674 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/10/09 16:31:25.676 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/10/09 16:31:26.435 [C] [panic.go:969]  the request url is  /dynamics/list
+2020/10/09 16:31:26.437 [C] [panic.go:969]  Handler crashed with error interface conversion: interface {} is float64, not int64
+2020/10/09 16:31:26.438 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/10/09 16:31:26.438 [C] [panic.go:969]  c:/go/src/runtime/iface.go:260
+2020/10/09 16:31:26.439 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/commons.go:54
+2020/10/09 16:31:26.439 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/dynamics.go:95
+2020/10/09 16:31:26.440 [C] [panic.go:969]  c:/go/src/reflect/value.go:460
+2020/10/09 16:31:26.441 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/10/09 16:31:26.441 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/10/09 16:31:26.442 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/10/09 16:31:26.442 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/10/09 16:31:26.443 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/10/09 16:31:26.445 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/10/09 16:31:27.362 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:31:27.362 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:31:27.527 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:31:27.564 [D] [server.go:2807]  |            ::1|[43m 404 [0m|          1ms| nomatch|[44m GET     [0m /favicon.ico
+2020/10/09 16:31:30.341 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:31:31.083 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:23.144 [D] [server.go:2807]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:46.852 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:56.646 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:57.679 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:59.132 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     4.0003ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:35:59.194 [D] [server.go:2807]  |            ::1|[43m 404 [0m|          1ms| nomatch|[44m GET     [0m /favicon.ico
+2020/10/09 16:38:43.503 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:38:43.503 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:38:44.445 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:38:44.445 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:38:48.121 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:38:49.288 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     9.0005ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:38:50.508 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     7.0004ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:39:12.308 [D] [server.go:2807]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:52:06.489 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:52:06.489 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:53:29.247 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:53:29.247 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:54:57.189 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:54:57.189 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:55:01.273 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2020/10/09 16:55:12.183 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 16:56:00.988 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:56:00.988 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:56:06.578 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2020/10/09 16:56:20.819 [C] [panic.go:969]  the request url is  /dynamics/list
+2020/10/09 16:56:20.820 [C] [panic.go:969]  Handler crashed with error interface conversion: interface {} is float64, not int64
+2020/10/09 16:56:20.827 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/10/09 16:56:20.830 [C] [panic.go:969]  c:/go/src/runtime/iface.go:260
+2020/10/09 16:56:20.833 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/commons.go:57
+2020/10/09 16:56:20.839 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/dynamics.go:96
+2020/10/09 16:56:20.840 [C] [panic.go:969]  c:/go/src/reflect/value.go:460
+2020/10/09 16:56:20.841 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/10/09 16:56:20.842 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/10/09 16:56:20.843 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/10/09 16:56:20.844 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/10/09 16:56:20.846 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/10/09 16:56:20.847 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/10/09 16:56:49.446 [C] [panic.go:969]  the request url is  /dynamics/list
+2020/10/09 16:56:49.446 [C] [panic.go:969]  Handler crashed with error interface conversion: interface {} is float64, not int64
+2020/10/09 16:56:49.447 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/10/09 16:56:49.448 [C] [panic.go:969]  c:/go/src/runtime/iface.go:260
+2020/10/09 16:56:49.448 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/commons.go:57
+2020/10/09 16:56:49.449 [C] [panic.go:969]  C:/Users/Administrator/go/src/hello/controllers/dynamics.go:96
+2020/10/09 16:56:49.449 [C] [panic.go:969]  c:/go/src/reflect/value.go:460
+2020/10/09 16:56:49.450 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/10/09 16:56:49.450 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/10/09 16:56:49.451 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/10/09 16:56:49.451 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/10/09 16:56:49.451 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/10/09 16:56:49.452 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/10/09 16:56:55.555 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:56:55.555 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:56:56.477 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/09 16:56:56.477 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/09 16:56:58.942 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     2.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 17:05:18.303 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 17:05:22.144 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 17:05:22.698 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/09 17:05:33.262 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2020/10/09 17:34:34.062 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /ws
+2020/10/09 17:34:34.137 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[44m GET     [0m /favicon.ico
+2020/10/09 17:34:42.380 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0003ms|   match|[44m GET     [0m /     r:/
+2020/10/09 17:34:42.411 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/js/reload.min.js
+2020/10/09 17:34:51.195 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|          1ms| nomatch|[44m GET     [0m /ws
+2020/10/09 17:34:53.358 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    12.0007ms|   match|[44m GET     [0m /     r:/
+2020/10/09 17:35:28.876 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /     r:/
+2020/10/09 17:35:29.717 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /     r:/
+2020/10/09 17:35:59.848 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0003ms|   match|[44m GET     [0m /     r:/
+2020/10/10 09:16:07.203 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/10/10 09:16:07.203 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/10/10 09:17:28.391 [D] [server.go:2807]  |            ::1|[42m 200 [0m|    15.0008ms|   match|[44m GET     [0m /     r:/
+2020/10/10 09:17:28.424 [D] [server.go:2807]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /static/js/reload.min.js
+2020/10/10 09:17:34.660 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2020/10/10 09:17:34.711 [D] [server.go:2807]  |            ::1|[43m 404 [0m|     3.0001ms| nomatch|[44m GET     [0m /favicon.ico
+2020/10/10 09:17:50.782 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/10/10 09:17:57.321 [D] [server.go:2807]  |            ::1|[42m 200 [0m|     1.0001ms|   match|[44m GET     [0m /dynamics/list   r:/dynamics/list
+2020/11/12 15:43:52.510 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 15:43:52.510 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 15:45:04.867 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 15:45:04.868 [C] [panic.go:969]  Handler crashed with error reflect: Call with too few input arguments
+2020/11/12 15:45:04.868 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 15:45:04.868 [C] [panic.go:969]  c:/go/src/reflect/value.go:377
+2020/11/12 15:45:04.869 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/11/12 15:45:04.869 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/11/12 15:45:04.869 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 15:45:04.870 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 15:45:04.870 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 15:45:04.871 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 15:46:08.501 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /hmacsha/FilterOauth
+2020/11/12 15:46:15.036 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 15:46:15.036 [C] [panic.go:969]  Handler crashed with error reflect: Call with too few input arguments
+2020/11/12 15:46:15.037 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 15:46:15.037 [C] [panic.go:969]  c:/go/src/reflect/value.go:377
+2020/11/12 15:46:15.038 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/11/12 15:46:15.038 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/11/12 15:46:15.039 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 15:46:15.040 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 15:46:15.040 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 15:46:15.041 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 15:47:10.206 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 15:47:10.207 [C] [panic.go:969]  Handler crashed with error reflect: Call with too few input arguments
+2020/11/12 15:47:10.207 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 15:47:10.208 [C] [panic.go:969]  c:/go/src/reflect/value.go:377
+2020/11/12 15:47:10.210 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/11/12 15:47:10.210 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/11/12 15:47:10.210 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 15:47:10.211 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 15:47:10.211 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 15:47:10.212 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:02:23.336 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:02:23.336 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:02:26.880 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:02:26.880 [C] [panic.go:969]  Handler crashed with error reflect: Call with too few input arguments
+2020/11/12 16:02:26.881 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:02:26.882 [C] [panic.go:969]  c:/go/src/reflect/value.go:377
+2020/11/12 16:02:26.883 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/11/12 16:02:26.885 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/11/12 16:02:26.888 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:02:26.889 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:02:26.890 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:02:26.891 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:10:13.396 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:10:13.396 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:10:18.041 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:10:18.042 [C] [panic.go:969]  Handler crashed with error reflect: Call with too few input arguments
+2020/11/12 16:10:18.043 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:10:18.044 [C] [panic.go:969]  c:/go/src/reflect/value.go:377
+2020/11/12 16:10:18.044 [C] [panic.go:969]  c:/go/src/reflect/value.go:321
+2020/11/12 16:10:18.045 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:853
+2020/11/12 16:10:18.046 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:10:18.046 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:10:18.047 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:10:18.048 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:15:35.881 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:15:35.881 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:18:05.740 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:18:05.740 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:19:05.555 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:19:05.555 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:20:41.309 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:20:41.309 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:21:25.016 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:21:25.018 [C] [panic.go:969]  Handler crashed with error can't find templatefile in the path:views/hmacshacontroller/filteroauth.tpl
+2020/11/12 16:21:25.021 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:21:25.022 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/template.go:75
+2020/11/12 16:21:25.023 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:306
+2020/11/12 16:21:25.023 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:257
+2020/11/12 16:21:25.024 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:237
+2020/11/12 16:21:25.024 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:865
+2020/11/12 16:21:25.025 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:21:25.026 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:21:25.027 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:21:25.028 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:23:00.635 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:23:00.636 [C] [panic.go:969]  Handler crashed with error can't find templatefile in the path:views/hmacshacontroller/filteroauth.tpl
+2020/11/12 16:23:00.637 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:23:00.637 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/template.go:75
+2020/11/12 16:23:00.638 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:306
+2020/11/12 16:23:00.639 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:257
+2020/11/12 16:23:00.639 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:237
+2020/11/12 16:23:00.640 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:865
+2020/11/12 16:23:00.641 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:23:00.641 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:23:00.642 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:23:00.643 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:29:37.171 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:29:37.171 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:30:21.600 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:30:21.605 [C] [panic.go:969]  Handler crashed with error can't find templatefile in the path:views/hmacshacontroller/filteroauth.tpl
+2020/11/12 16:30:21.605 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:30:21.606 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/template.go:75
+2020/11/12 16:30:21.607 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:306
+2020/11/12 16:30:21.608 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:257
+2020/11/12 16:30:21.608 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:237
+2020/11/12 16:30:21.609 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:865
+2020/11/12 16:30:21.609 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:30:21.611 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:30:21.614 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:30:21.615 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:31:47.737 [C] [panic.go:969]  the request url is  /hmacsha/FilterOauth
+2020/11/12 16:31:47.738 [C] [panic.go:969]  Handler crashed with error can't find templatefile in the path:views/hmacshacontroller/filteroauth.tpl
+2020/11/12 16:31:47.739 [C] [panic.go:969]  c:/go/src/runtime/panic.go:969
+2020/11/12 16:31:47.740 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/template.go:75
+2020/11/12 16:31:47.740 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:306
+2020/11/12 16:31:47.742 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:257
+2020/11/12 16:31:47.743 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/controller.go:237
+2020/11/12 16:31:47.744 [C] [panic.go:969]  C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:865
+2020/11/12 16:31:47.746 [C] [panic.go:969]  c:/go/src/net/http/server.go:2807
+2020/11/12 16:31:47.747 [C] [panic.go:969]  c:/go/src/net/http/server.go:1895
+2020/11/12 16:31:47.748 [C] [panic.go:969]  c:/go/src/runtime/asm_amd64.s:1373
+2020/11/12 16:31:47.748 [server.go:3059]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/11/12 16:32:09.569 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:32:09.569 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:32:40.021 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:32:40.021 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:41:18.376 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|          1ms| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:42:22.942 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:42:22.942 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:42:26.923 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:43:26.495 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:43:26.495 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:43:30.637 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:43:52.591 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:43:52.591 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:43:55.781 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:45:17.175 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:45:17.175 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2020/11/12 16:45:21.462 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:45:30.178 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:45:34.558 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:46:07.305 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[46m POST    [0m /hmacsha/GetMAC
+2020/11/12 16:47:27.865 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2020/11/12 16:47:27.865 [I] [asm_amd64.s:1373]  Admin server Running on :8088

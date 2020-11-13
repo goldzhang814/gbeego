@@ -1,0 +1,21 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": null,
+    "definitions": {
+        "float": {
+            "title": "float",
+            "type": "object"
+        },
+        "models.ZDTCustomer.Customer": {
+            "title": "Customer",
+            "type": "object"
+        },
+        "models.ZDTProduct.ProductList": {
+            "title": "ProductList",
+            "type": "object"
+        }
+    }
+}
