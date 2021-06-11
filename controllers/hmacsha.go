@@ -1,11 +1,11 @@
 package controllers
 
-import(
+import (
 	"crypto/hmac"
 	"crypto/sha1"
+	"fmt"
 	"strconv"
 	"time"
-	"fmt"
 	//"net/http"
 	//"github.com/astaxie/beego"
 	//"github.com/astaxie/beego/context"
@@ -23,10 +23,10 @@ func (c *HmacshaController) FilterOauth() {
 	if err != nil {
 		c.Abort("failed0")
 	}
-	timestamp_t := time.Unix(timestamp, 0)
-	now_t := time.Now()
-	if now_t.Sub(timestamp_t).Minutes() > 10 {
-		fmt.Println(timestamp_t, "Duration is too long")
+	timestampT := time.Unix(timestamp, 0)
+	nowT := time.Now()
+	if nowT.Sub(timestampT).Minutes() > 10 {
+		fmt.Println(timestampT, "Duration is too long")
 		c.Abort("failed1")
 	}
 
@@ -40,7 +40,7 @@ func (c *HmacshaController) FilterOauth() {
 		c.Abort("failed3")
 	}
 
-	if !CheckMAC(size+timestamp_t.String(), sign, "seckey") {
+	if !CheckMAC(size+timestampT.String(), sign, "seckey") {
 		fmt.Println("Verify error")
 		c.Abort("failed4")
 	}
@@ -48,14 +48,12 @@ func (c *HmacshaController) FilterOauth() {
 	c.Abort("ok")
 }
 
-
 func CheckMAC(message, sign, key string) bool {
 	mac := hmac.New(sha1.New, []byte(key))
 
 	mac.Write([]byte(message))
 	return hex.EncodeToString(mac.Sum(nil)) == sign
 }
-
 
 func (c *HmacshaController) GetMAC() {
 	fmt.Println("come getMac")
@@ -67,9 +65,9 @@ func (c *HmacshaController) GetMAC() {
 	if err != nil {
 		c.Abort("failed0")
 	}
-	timestamp_t := time.Unix(timestamp, 0)
+	timestampT := time.Unix(timestamp, 0)
 	size := "9999"
-	message := size+timestamp_t.String()
+	message := size + timestampT.String()
 
 	mac := hmac.New(sha1.New, []byte(key))
 

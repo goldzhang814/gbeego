@@ -324,3 +324,18 @@
 2020/11/13 11:26:58.200 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    11.0007ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
 2020/11/13 11:27:49.905 [D] [dynamics.go:76]  this is debug 
 2020/11/13 11:27:49.907 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     5.0003ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:53:12.646 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:53:12.648 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|    13.0007ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2020/11/13 11:53:14.223 [D] [dynamics.go:76]  this is debug 
+2020/11/13 11:53:14.225 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|     6.0003ms|   match|[44m GET     [0m /dynamics/test   r:/dynamics/test
+2021/06/04 09:08:27.998 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2021/06/04 09:08:27.998 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2021/06/04 09:10:22.850 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[44m GET     [0m /dynamics/gtoken   r:/dynamics/gtoken
+2021/06/04 09:15:22.647 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2021/06/04 09:15:22.647 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2021/06/04 09:15:40.293 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|     1.0001ms| nomatch|[44m GET     [0m /dynamics/updateFood
+2021/06/04 09:15:45.986 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|          1ms|   match|[43m PUT     [0m /dynamics/updateFood   r:/dynamics/updateFood
+2021/06/04 09:16:48.327 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2021/06/04 09:16:48.327 [I] [asm_amd64.s:1373]  Admin server Running on :8088
+2021/06/04 09:17:00.142 [D] [server.go:2807]  |      127.0.0.1|[43m 404 [0m|           0s| nomatch|[43m PUT     [0m /dynamics/deleteFood
+2021/06/04 09:17:04.511 [D] [server.go:2807]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[41m DELETE  [0m /dynamics/deleteFood   r:/dynamics/deleteFood

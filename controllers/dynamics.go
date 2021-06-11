@@ -1,12 +1,12 @@
 package controllers
 
 import (
+	"encoding/json"
+	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 	"hello/models"
-	"encoding/json"
-	"fmt"
 )
 
 func init() {
@@ -20,23 +20,23 @@ type DynamicsController struct {
 	CommonsController
 }
 
-type res struct{
-	Code  int `json:"code"`
-	Msg  string `json:"msg"`
+type res struct {
+	Code int         `json:"code"`
+	Msg  string      `json:"msg"`
 	Data interface{} `json:"data"`
 }
 
-type User struct{
-	Id  int `json:"id"`
-	Name  string `json:"name"`
+type User struct {
+	Id   int    `json:"id"`
+	Name string `json:"name"`
 }
 
 type UserInfo struct {
-    ID uint64
-    Username string
-    Nbf int64
-	Iat int64
-	Exp int64
+	ID       uint64
+	Username string
+	Nbf      int64
+	Iat      int64
+	Exp      int64
 }
 
 type user struct {
@@ -46,7 +46,7 @@ type user struct {
 	Email string
 }
 
-func (c *DynamicsController) Get() {
+func (this *DynamicsController) Get() {
 	o := orm.NewOrm()
 	o.Using("default") // 默认使用 default，你可以指定为其他数据库
 	// profile := new(models.Profile)
@@ -55,13 +55,12 @@ func (c *DynamicsController) Get() {
 	user := new(models.User)
 	//user.Profile = profile
 	user.Name = "slene"
-	f,_ := o.Insert(user)
+	f, _ := o.Insert(user)
 	fmt.Println(f)
 
-
 	var users []*User
-	num,err := o.Raw("SELECT id,name FROM user").QueryRows(&users)
-	if err == nil  {
+	num, err := o.Raw("SELECT id,name FROM user").QueryRows(&users)
+	if err == nil {
 		fmt.Println("user nums: ", num)
 	}
 
@@ -74,9 +73,9 @@ func (c *DynamicsController) Get() {
 
 	beego.Debug("this is debug")
 
-	c.Data["json"] = &r
-	c.ServeJSON()
-	return 
+	this.Data["json"] = &r
+	this.ServeJSON()
+	return
 
 	// rj,err := json.Marshal(r)
 	// if err != nil {
@@ -86,49 +85,46 @@ func (c *DynamicsController) Get() {
 	// c.Ctx.WriteString(string(rj[:]))
 }
 
-func (c *DynamicsController) Post() {
-	c.Ctx.WriteString("hello2")
+func (this *DynamicsController) Post() {
+	this.Ctx.WriteString("hello2")
 }
 
-func (c *DynamicsController) GenToken(){
+func (this *DynamicsController) GenToken() {
 	u := new(UserInfo)
 	u.ID = 99
 	u.Username = "gold"
 
-	token,_ := CreateToken(u);
-	c.Ctx.WriteString(token)
+	token, _ := CreateToken(u)
+	this.Ctx.WriteString(token)
 
 }
 
-
-func (c *DynamicsController) GetAnnouceList(){
-	jsoninfo := c.GetString("token")
+func (this *DynamicsController) GetAnnouceList() {
+	jsoninfo := this.GetString("token")
 	if jsoninfo == "" {
-		c.Ctx.WriteString("jsoninfo is empty")
-		return 
+		this.Ctx.WriteString("jsoninfo is empty")
+		return
 	}
 
-	f,err := ParseToken(jsoninfo)
+	f, err := ParseToken(jsoninfo)
 	if err != nil {
 		fmt.Println(err)
-		c.Ctx.WriteString("failed")
-		return 
+		this.Ctx.WriteString("failed")
+		return
 	}
-
 
 	fmt.Println(f)
 
-	c.Ctx.WriteString("ok")
-	return 
+	this.Ctx.WriteString("ok")
+	return
 }
 
-
-func (this *DynamicsController) ParseFormData(){
+func (this *DynamicsController) ParseFormData() {
 	u := user{}
-	if err:= this.ParseForm(&u);err !=nil {
+	if err := this.ParseForm(&u); err != nil {
 		fmt.Println(err)
 		this.Ctx.WriteString("failed")
-		return 
+		return
 	}
 
 	fmt.Println(u)
@@ -145,15 +141,25 @@ func (this *DynamicsController) PostBody() {
 	return
 }
 
-func (c *DynamicsController) PostUpload() {
-	f, h, err := c.GetFile("uploadname")
+func (this *DynamicsController) PostUpload() {
+	f, h, err := this.GetFile("uploadname")
 	defer f.Close()
 	if err != nil {
 		fmt.Println("getfile err ", err)
 	} else {
-		c.SaveToFile("uploadname", "G:/www/"+h.Filename)
+		this.SaveToFile("uploadname", "G:/www/"+h.Filename)
 	}
 
-	c.Ctx.WriteString("success")
+	this.Ctx.WriteString("success")
+	return
+}
+
+func (this *DynamicsController) UpdateFood() {
+	this.Ctx.WriteString("put success")
+	return
+}
+
+func (this *DynamicsController) DeleteFood() {
+	this.Ctx.WriteString("delete success")
 	return
 }
